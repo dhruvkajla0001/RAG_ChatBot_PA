@@ -2,9 +2,8 @@
 
 import os
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
-from langchain.schema import Document
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # Directory to save vector DB
 VECTOR_STORE_DIR = "embeddings/vector_store"
@@ -34,8 +33,5 @@ def embed_documents(chunks):
 
 
 def load_vector_store():
-    """
-    Loads the FAISS vector store from disk.
-    """
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    return FAISS.load_local(VECTOR_STORE_DIR, embeddings)
+    return FAISS.load_local("vector_db", embeddings, allow_dangerous_deserialization=True)
