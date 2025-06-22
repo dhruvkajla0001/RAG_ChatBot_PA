@@ -3,41 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>RAG Personal Assistant Chatbot</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #222;
-      padding: 40px;
-      line-height: 1.7;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2, h3 {
-      color: #2b6cb0;
-    }
-    pre {
-      background: #eee;
-      padding: 12px;
-      border-radius: 8px;
-      overflow-x: auto;
-    }
-    code {
-      background-color: #f0f0f0;
-      padding: 3px 6px;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
-    ul {
-      margin-left: 1.5em;
-    }
-    .highlight {
-      background: #d9f2ff;
-      padding: 8px 12px;
-      border-left: 4px solid #2b6cb0;
-      margin: 10px 0;
-    }
-  </style>
+
 </head>
 <body>
 
